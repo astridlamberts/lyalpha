@@ -1,0 +1,17 @@
+\begin{thebibliography}{}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{{Planck Collaboration} {et~al.}(2014){Planck Collaboration}, {Ade},
+  {Aghanim}, {Armitage-Caplan}, {Arnaud}, {Ashdown}, {Atrio-Barandela},
+  {Aumont}, {Baccigalupi}, {Banday}, \& et~al.}]{2014A&A...571A..16P}
+{Planck Collaboration}, {Ade}, P.~A.~R., {Aghanim}, N., {et~al.} 2014, \aap,
+  571, A16
+
+\bibitem[{{Springel} \& {Hernquist}(2002)}]{2002MNRAS.333..649S}
+{Springel}, V., \& {Hernquist}, L. 2002, \mnras, 333, 649
+
+\bibitem[{{Viel} {et~al.}(2004){Viel}, {Haehnelt}, \&
+  {Springel}}]{2004MNRAS.354..684V}
+{Viel}, M., {Haehnelt}, M.~G., \& {Springel}, V. 2004, \mnras, 354, 684
+
+\end{thebibliography}
