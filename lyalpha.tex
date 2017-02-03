@@ -120,9 +120,8 @@ We perform a set of three simulations, one without any blazar heating, one with 
 
 \begin{figure}[h]
 \centering
- \includegraphics[width = .45\textwidth ]{window_gal_qso}
-
-\caption{Window function for TeV blazar heating from $z=1$ (solid lines), $z=2$ (dashed lines) and $z=4$ (dotted lines) for the galaxy bias model (red) and the quasar bias model (blue).  The vertical dashed lines indicate the minimal and maximal comoving wavenumber modeled in the simulation. \ALc{Placeholder, will remove galaxy bias and add more appropriate redshift lines}}
+ \includegraphics[width = .45\textwidth ]{window_qso}
+\caption{Window function for TeV blazar heating for $z=1$ (dotted line), $z=2$ (dot-dashed line), $z=3$ (dashed line)  and $z=4$ (solid line).  The vertical dashed line indicate the minimal comoving wavenumber modeled in the simulation.}
 \label{fig:window}
 \end{figure}
 
@@ -137,6 +136,37 @@ Because of the typical length scale of the heating rate fluctuations, our simula
 
 
 \section{Comparison with observations}\label{sec:obs}
+\subsection{Inhomegenous blazar heating}
+Fig.~\ref{fig:rho_T} shows the temperature-density distribution in our inhomogeneous heating model. The complete description of the inhomogeneous heating model are described in Paper I. Here we recall the main characteristics of the temperature-density distribution, which most observations try to infer. As time goes by, the cumulated impact of blazar heating increases, with a higher temperature difference with respect to the unheated case. Still, as some regions are too far from heating sources, they remain cold, as can be seen by the remnant cold gas, especially at $z=3$. This is very different from the uniform heating model (shown in black) and can potentially reconcile the blazar heating model with observations of absorption lines with Doppler parameter ($b\leq 20$ km s$^{-1}$). At the redshifts most accessible with the Ly$\alpha$ forest, the temperature range  covers almost two orders of magnitude at the lowest density and  even around mean density, there is an important spread. At lower redshifts, the whole IGM gets heated up and after $z\geqslant1$, the inhomogeneous model recovers the uniform model.  In the following section, we compare the observables derived from this $T-\rho$ distribution with observational data.
+
+
+
+\begin{figure*}
+\centering
+\includegraphics[width = .3\textwidth ]{T_rho_z3_qso.pdf}
+\includegraphics[width = .3\textwidth ]{T_rho_z2_qso.pdf}
+\includegraphics[width = .3\textwidth ]{T_rho_z1_qso.pdf}
+\includegraphics[width = .3 \textwidth ]{T_rho_z3_noheat.pdf}
+\includegraphics[width = .3\textwidth ]{T_rho_z2_noheat.pdf}
+\includegraphics[width = .3\textwidth ]{T_rho_z1_noheat.pdf}
+
+\caption{ Volume-weighted temperature - density relation at $z=3,2$ and 1 (from right to left) for the simulations with no blazar heating (bottom) and inhomogeneous heating (top). The overlying black contours show the corresponding $T-\rho$ relation for uniform blazar heating \citep{2012MNRAS.423..149P} for the same redshift range. The color scale is logarithmic.}
+
+%% \includegraphics[width = .45\textwidth ]{T_rho_z3_noheat.pdf}
+%% \includegraphics[width = .45\textwidth ]{T_rho_z3_qso.pdf}\\
+%% \includegraphics[width = .45\textwidth ]{T_rho_z2_noheat.pdf}
+%% \includegraphics[width = .45\textwidth ]{T_rho_z2_qso.pdf}\\
+%% \includegraphics[width = .45\textwidth ]{T_rho_z1_noheat.pdf}
+%% \includegraphics[width = .45\textwidth ]{T_rho_z1_qso.pdf}\\
+%% \caption{ Volume-weighted temperature - density relation at $z=3$ (top), $z=2$ (middle), $z=1$ (bottom) for the simulations with no blazar heating (left) and inhomogeneous heating (right). The overlying black contours show the corresponding $T-\rho$ relation for uniform blazar heating \citep{2012MNRAS.423..149P} for the same redshift range. The color scale is logarithmic.}
+
+
+\label{fig:rho_T}
+\end{figure*}
+
+
+
+
 \subsection{Post-processing the simulations}
 \begin{itemize}
 \item Global flow , potential caveats
