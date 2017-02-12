@@ -1,17 +1,192 @@
 \begin{thebibliography}{}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
+\bibitem[{{Becker} \& {Bolton}(2013)}]{2013MNRAS.436.1023B}
+{Becker}, G.~D., \& {Bolton}, J.~S. 2013, \mnras, 436, 1023
+
+\bibitem[{{Becker} {et~al.}(2011){Becker}, {Bolton}, {Haehnelt}, \&
+  {Sargent}}]{2011MNRAS.410.1096B}
+{Becker}, G.~D., {Bolton}, J.~S., {Haehnelt}, M.~G., \& {Sargent}, W.~L.~W.
+  2011, \mnras, 410, 1096
+
+\bibitem[{{Boera} {et~al.}(2014){Boera}, {Murphy}, {Becker}, \&
+  {Bolton}}]{2014MNRAS.441.1916B}
+{Boera}, E., {Murphy}, M.~T., {Becker}, G.~D., \& {Bolton}, J.~S. 2014, \mnras,
+  441, 1916
+
+\bibitem[{{Bolton} {et~al.}(2014){Bolton}, {Becker}, {Haehnelt}, \&
+  {Viel}}]{2014MNRAS.438.2499B}
+{Bolton}, J.~S., {Becker}, G.~D., {Haehnelt}, M.~G., \& {Viel}, M. 2014,
+  \mnras, 438, 2499
+
+\bibitem[{{Bolton} {et~al.}(2017){Bolton}, {Puchwein}, {Sijacki}, {Haehnelt},
+  {Kim}, {Meiksin}, {Regan}, \& {Viel}}]{2017MNRAS.464..897B}
+{Bolton}, J.~S., {Puchwein}, E., {Sijacki}, D., {et~al.} 2017, \mnras, 464, 897
+
+\bibitem[{{Bolton} {et~al.}(2008){Bolton}, {Viel}, {Kim}, {Haehnelt}, \&
+  {Carswell}}]{2008MNRAS.386.1131B}
+{Bolton}, J.~S., {Viel}, M., {Kim}, T.-S., {Haehnelt}, M.~G., \& {Carswell},
+  R.~F. 2008, \mnras, 386, 1131
+
+\bibitem[{{Broderick} {et~al.}(2012){Broderick}, {Chang}, \&
+  {Pfrommer}}]{2012ApJ...752...22B}
+{Broderick}, A.~E., {Chang}, P., \& {Pfrommer}, C. 2012, \apj, 752, 22
+
+\bibitem[{{Calura} {et~al.}(2012){Calura}, {Tescari}, {D'Odorico}, {Viel},
+  {Cristiani}, {Kim}, \& {Bolton}}]{2012MNRAS.422.3019C}
+{Calura}, F., {Tescari}, E., {D'Odorico}, V., {et~al.} 2012, \mnras, 422, 3019
+
+\bibitem[{{Chang} {et~al.}(2012){Chang}, {Broderick}, \&
+  {Pfrommer}}]{2012ApJ...752...23C}
+{Chang}, P., {Broderick}, A.~E., \& {Pfrommer}, C. 2012, \apj, 752, 23
+
+\bibitem[{{Chang} {et~al.}(2014){Chang}, {Broderick}, {Pfrommer}, {Puchwein},
+  {Lamberts}, \& {Shalaby}}]{2014ApJ...797..110C}
+{Chang}, P., {Broderick}, A.~E., {Pfrommer}, C., {et~al.} 2014, \apj, 797, 110
+
+\bibitem[{{Chang} {et~al.}(2016){Chang}, {Broderick}, {Pfrommer}, {Puchwein},
+  {Lamberts}, {Shalaby}, \& {Vasil}}]{2016ApJ...833..118C}
+---. 2016, \apj, 833, 118
+
+\bibitem[{{Compostella} {et~al.}(2013){Compostella}, {Cantalupo}, \&
+  {Porciani}}]{2013MNRAS.435.3169C}
+{Compostella}, M., {Cantalupo}, S., \& {Porciani}, C. 2013, \mnras, 435, 3169
+
+\bibitem[{{Fan} {et~al.}(2006){Fan}, {Carilli}, \&
+  {Keating}}]{2006ARA&A..44..415F}
+{Fan}, X., {Carilli}, C.~L., \& {Keating}, B. 2006, \araa, 44, 415
+
+\bibitem[{{Hui} \& {Gnedin}(1997)}]{1997MNRAS.292...27H}
+{Hui}, L., \& {Gnedin}, N.~Y. 1997, \mnras, 292, 27
+
+\bibitem[{{Kim} {et~al.}(2007){Kim}, {Bolton}, {Viel}, {Haehnelt}, \&
+  {Carswell}}]{2007MNRAS.382.1657K}
+{Kim}, T.-S., {Bolton}, J.~S., {Viel}, M., {Haehnelt}, M.~G., \& {Carswell},
+  R.~F. 2007, \mnras, 382, 1657
+
+\bibitem[{{Lamberts} {et~al.}(2015){Lamberts}, {Chang}, {Pfrommer}, {Puchwein},
+  {Broderick}, \& {Shalaby}}]{2015ApJ...811...19L}
+{Lamberts}, A., {Chang}, P., {Pfrommer}, C., {et~al.} 2015, \apj, 811, 19
+
+\bibitem[{{Lee}(2012)}]{2012ApJ...753..136L}
+{Lee}, K.-G. 2012, \apj, 753, 136
+
+\bibitem[{{Lynds}(1971)}]{1971ApJ...164L..73L}
+{Lynds}, R. 1971, \apjl, 164, L73
+
+\bibitem[{{McQuinn}(2016)}]{2016ARA&A..54..313M}
+{McQuinn}, M. 2016, \araa, 54, 313
+
+\bibitem[{{McQuinn} {et~al.}(2009){McQuinn}, {Lidz}, {Zaldarriaga},
+  {Hernquist}, {Hopkins}, {Dutta}, \&
+  {Faucher-Gigu{\`e}re}}]{2009ApJ...694..842M}
+{McQuinn}, M., {Lidz}, A., {Zaldarriaga}, M., {et~al.} 2009, \apj, 694, 842
+
+\bibitem[{{Meiksin} \& {Tittley}(2012)}]{2012MNRAS.423....7M}
+{Meiksin}, A., \& {Tittley}, E.~R. 2012, \mnras, 423, 7
+
+\bibitem[{{Miniati} \& {Elyiv}(2013)}]{2013ApJ...770...54M}
+{Miniati}, F., \& {Elyiv}, A. 2013, \apj, 770, 54
+
+\bibitem[{{Palanque-Delabrouille} {et~al.}(2013){Palanque-Delabrouille},
+  {Y{\`e}che}, {Borde}, {Le Goff}, {Rossi}, {Viel}, {Aubourg}, {Bailey},
+  {Bautista}, {Blomqvist}, {Bolton}, {Bolton}, {Busca}, {Carithers}, {Croft},
+  {Dawson}, {Delubac}, {Font-Ribera}, {Ho}, {Kirkby}, {Lee}, {Margala},
+  {Miralda-Escud{\'e}}, {Muna}, {Myers}, {Noterdaeme}, {P{\^a}ris},
+  {Petitjean}, {Pieri}, {Rich}, {Rollinde}, {Ross}, {Schlegel}, {Schneider},
+  {Slosar}, \& {Weinberg}}]{2013A&A...559A..85P}
+{Palanque-Delabrouille}, N., {Y{\`e}che}, C., {Borde}, A., {et~al.} 2013, \aap,
+  559, A85
+
+\bibitem[{{Palanque-Delabrouille} {et~al.}(2015){Palanque-Delabrouille},
+  {Y{\`e}che}, {Baur}, {Magneville}, {Rossi}, {Lesgourgues}, {Borde}, {Burtin},
+  {LeGoff}, {Rich}, {Viel}, \& {Weinberg}}]{2015JCAP...11..011P}
+{Palanque-Delabrouille}, N., {Y{\`e}che}, C., {Baur}, J., {et~al.} 2015, JCAP,
+  11, 011
+
+\bibitem[{{Pfrommer} {et~al.}(2012){Pfrommer}, {Chang}, \&
+  {Broderick}}]{2012ApJ...752...24P}
+{Pfrommer}, C., {Chang}, P., \& {Broderick}, A.~E. 2012, \apj, 752, 24
+
 \bibitem[{{Planck Collaboration} {et~al.}(2014){Planck Collaboration}, {Ade},
   {Aghanim}, {Armitage-Caplan}, {Arnaud}, {Ashdown}, {Atrio-Barandela},
   {Aumont}, {Baccigalupi}, {Banday}, \& et~al.}]{2014A&A...571A..16P}
 {Planck Collaboration}, {Ade}, P.~A.~R., {Aghanim}, N., {et~al.} 2014, \aap,
   571, A16
 
+\bibitem[{{Puchwein} {et~al.}(2012){Puchwein}, {Pfrommer}, {Springel},
+  {Broderick}, \& {Chang}}]{2012MNRAS.423..149P}
+{Puchwein}, E., {Pfrommer}, C., {Springel}, V., {Broderick}, A.~E., \& {Chang},
+  P. 2012, \mnras, 423, 149
+
+\bibitem[{{Rauch} {et~al.}(1997){Rauch}, {Miralda-Escude}, {Sargent}, {Barlow},
+  {Weinberg}, {Hernquist}, {Katz}, {Cen}, \& {Ostriker}}]{1997ApJ...489....7R}
+{Rauch}, M., {Miralda-Escude}, J., {Sargent}, W.~L.~W., {et~al.} 1997, \apj,
+  489, 7
+
+\bibitem[{{Rollinde} {et~al.}(2013){Rollinde}, {Theuns}, {Schaye}, {P{\^a}ris},
+  \& {Petitjean}}]{2013MNRAS.428..540R}
+{Rollinde}, E., {Theuns}, T., {Schaye}, J., {P{\^a}ris}, I., \& {Petitjean}, P.
+  2013, \mnras, 428, 540
+
+\bibitem[{{Rorai} {et~al.}(2017){Rorai}, {Becker}, {Haehnelt}, {Carswell},
+  {Bolton}, {Cristiani}, {D'Odorico}, {Cupani}, {Barai}, {Calura}, {Kim},
+  {Pomante}, {Tescari}, \& {Viel}}]{2017MNRAS.466.2690R}
+{Rorai}, A., {Becker}, G.~D., {Haehnelt}, M.~G., {et~al.} 2017, \mnras, 466,
+  2690
+
+\bibitem[{{Rudie} {et~al.}(2012){Rudie}, {Steidel}, \&
+  {Pettini}}]{2012ApJ...757L..30R}
+{Rudie}, G.~C., {Steidel}, C.~C., \& {Pettini}, M. 2012, \apjl, 757, L30
+
+\bibitem[{{Schaye} {et~al.}(2000){Schaye}, {Theuns}, {Rauch}, {Efstathiou}, \&
+  {Sargent}}]{2000MNRAS.318..817S}
+{Schaye}, J., {Theuns}, T., {Rauch}, M., {Efstathiou}, G., \& {Sargent},
+  W.~L.~W. 2000, \mnras, 318, 817
+
+\bibitem[{{Schlickeiser} {et~al.}(2012){Schlickeiser}, {Ibscher}, \&
+  {Supsar}}]{2012ApJ...758..102S}
+{Schlickeiser}, R., {Ibscher}, D., \& {Supsar}, M. 2012, \apj, 758, 102
+
+\bibitem[{{Schlickeiser} {et~al.}(2013){Schlickeiser}, {Krakau}, \&
+  {Supsar}}]{2013ApJ...777...49S}
+{Schlickeiser}, R., {Krakau}, S., \& {Supsar}, M. 2013, \apj, 777, 49
+
+\bibitem[{{Shull} {et~al.}(2012){Shull}, {Smith}, \&
+  {Danforth}}]{2012ApJ...759...23S}
+{Shull}, J.~M., {Smith}, B.~D., \& {Danforth}, C.~W. 2012, \apj, 759, 23
+
+\bibitem[{{Sironi} \& {Giannios}(2014)}]{2014ApJ...787...49S}
+{Sironi}, L., \& {Giannios}, D. 2014, \apj, 787, 49
+
+\bibitem[{{Slosar} {et~al.}(2013){Slosar}, {Ir{\v s}i{\v c}}, {Kirkby},
+  {Bailey}, {Busca}, {Delubac}, {Rich}, {Aubourg}, {Bautista}, {Bhardwaj},
+  {Blomqvist}, {Bolton}, {Bovy}, {Brownstein}, {Carithers}, {Croft}, {Dawson},
+  {Font-Ribera}, {Le Goff}, {Ho}, {Honscheid}, {Lee}, {Margala}, {McDonald},
+  {Medolin}, {Miralda-Escud{\'e}}, {Myers}, {Nichol}, {Noterdaeme},
+  {Palanque-Delabrouille}, {P{\^a}ris}, {Petitjean}, {Pieri}, {Pi{\v s}kur},
+  {Roe}, {Ross}, {Rossi}, {Schlegel}, {Schneider}, {Suzuki}, {Sheldon},
+  {Seljak}, {Viel}, {Weinberg}, \& {Y{\`e}che}}]{2013JCAP...04..026S}
+{Slosar}, A., {Ir{\v s}i{\v c}}, V., {Kirkby}, D., {et~al.} 2013, JCAP, 4, 026
+
+\bibitem[{{Springel}(2005)}]{2005MNRAS.364.1105S}
+{Springel}, V. 2005, \mnras, 364, 1105
+
 \bibitem[{{Springel} \& {Hernquist}(2002)}]{2002MNRAS.333..649S}
 {Springel}, V., \& {Hernquist}, L. 2002, \mnras, 333, 649
+
+\bibitem[{{Viel} {et~al.}(2009){Viel}, {Bolton}, \&
+  {Haehnelt}}]{2009MNRAS.399L..39V}
+{Viel}, M., {Bolton}, J.~S., \& {Haehnelt}, M.~G. 2009, \mnras, 399, L39
 
 \bibitem[{{Viel} {et~al.}(2004){Viel}, {Haehnelt}, \&
   {Springel}}]{2004MNRAS.354..684V}
 {Viel}, M., {Haehnelt}, M.~G., \& {Springel}, V. 2004, \mnras, 354, 684
+
+\bibitem[{{Worseck} {et~al.}(2011){Worseck}, {Prochaska}, {McQuinn},
+  {Dall'Aglio}, {Fechner}, {Hennawi}, {Reimers}, {Richter}, \&
+  {Wisotzki}}]{2011ApJ...733L..24W}
+{Worseck}, G., {Prochaska}, J.~X., {McQuinn}, M., {et~al.} 2011, \apjl, 733,
+  L24
 
 \end{thebibliography}
