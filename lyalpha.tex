@@ -115,7 +115,7 @@ We start our simulations based on initial conditions evolved up to redshift $z=1
 
 \ALc{[Paragraph about UV  background and related stuff here]}
 
-We perform a set of three simulations, one without any blazar heating, one with uniform blazar heating and one with inhomogeneous blazar heating.  The uniform blazar heating model is identical to the ``intermediate heating'' model presented in \citet{2012MNRAS.423..149P}.  Our inhomogeneous model has the same total amount of energy injected by blazars while accounting for regions receiving more or less heating according to their proximity to heating sources. The model is fully described in Paper I  and is based on an analytic formalism relating the distribution of the heating rate to the underlying dark matter distribution. It results in the  filtering function shown on Fig.~\ref{fig:window}, which  removes small scale fluctuations and enhances fluctuations beyond $\simeq 10$ h$^{-1}$ Mpc at $z=4$ and $\simeq 40$ h$^{-1}$ Mcp at $z=2$.  The shape and redshift evolution of the  window function is set by the mean free path of the VHEGR combined with the bias of the heating sources.  While we presented two models in Paper I, with galaxy bias and quasar bias, in this work we focus on the model with quasar bias, which is probably more representative of the bias of TeV blazars.  
+We perform a set of three simulations, one without any blazar heating, one with uniform blazar heating and one with inhomogeneous blazar heating.  The three simulations are run with identical initial conditions. The uniform blazar heating model is identical to the ``intermediate heating'' model presented in \citet{2012MNRAS.423..149P}.  Our inhomogeneous model has the same total amount of energy injected by blazars while accounting for regions receiving more or less heating according to their proximity to heating sources. The model is fully described in Paper I  and is based on an analytic formalism relating the distribution of the heating rate to the underlying dark matter distribution. It results in the  filtering function shown on Fig.~\ref{fig:window}, which  removes small scale fluctuations and enhances fluctuations beyond $\simeq 10$ h$^{-1}$ Mpc at $z=4$ and $\simeq 40$ h$^{-1}$ Mcp at $z=2$.  The shape and redshift evolution of the  window function is set by the mean free path of the VHEGR combined with the bias of the heating sources.  While we presented two models in Paper I, with galaxy bias and quasar bias, in this work we focus on the model with quasar bias, which is probably more representative of the bias of TeV blazars.  
 
 \begin{figure}[h]
 \centering
@@ -179,29 +179,10 @@ We compare our simulations with different heating models with observations of th
 \item Details about subdividing LOS in chunks for VPFIT
 \end{itemize}
 
-\begin{figure*}[h]
-\centering
-\includegraphics[width = .8\textwidth ]{lines_z2_2}
-\caption{Ly$\alpha$ absorption spectrum at $z=2.2$ in the three models. \ALc{[Placeholder, will be improved]}}
-\label{fig:bias}
-\end{figure*}
 
 \subsection{Ly$\alpha$ forest statistics}
 
 
-\begin{figure}[h]
-\centering
-\includegraphics[width = .45\textwidth ]{powerspec}
-\caption{ Power spectrum at different redshifts compare with observations \ALc{[Placeholder, will be improved]}}
-\label{fig:powespec}
-\end{figure}
-
-\begin{figure*}[h]
-\centering
-\includegraphics[width = .9\textwidth ]{flux_PDF}
-\caption{Flux PDF at different redshifts compare with observations \ALc{[Placeholder, will be improved]}}
-\label{fig:fluxPDF}
-\end{figure*}
 
 \subsection{Thermal state of the IGM}
 To compare with the rescaled flux PDF by \citet{2017MNRAS.466.2690R}, we carefully perform the same steps. First, we rescale the optical depth so that the mean transmitted flux $F$ matches the observed value at that redshift \citep{2013MNRAS.436.1023B}. We perform this operation at once for all lines of sight resulting from the same output.  Then, we smooth the flux with a Gaussian of full width at half maximum of $7.2$ km s$^{-1}$ (to model the aperture of the slit) and rebin it into bins of $\Delta v=2.5$ km s$^{-1}$ (resolution of the UVES spectrograph). We then add Gaussian noise with $\sigma=(\sigma_0^2+F(\sigma_c^2-\sigma_0^2))^{1/2}$ with $\sigma_0=0.0028$ and $\sigma_c=0.0088$ (see Appendix F in \citet{2017MNRAS.466.2690R})
@@ -209,8 +190,14 @@ To compare with the rescaled flux PDF by \citet{2017MNRAS.466.2690R}, we careful
 To avoid uncertainties due to continuum placement, we then rescale the transmitted flux to the transmitted flux in the 95$^{th}$ percentile. The latter is close to the peak of the flux PDF, and is therefore less noisy than the mean. This operation performed independently for each line of sight, in chunks of size 10 Mpc/h. Finally, to enhance the impact of low density regions, we rescale the optical depth by a factor $A=10$, which yield a rescaled transmitted flux $F_A=F^A$.
 
 
-Fig.~\ref{fig:PDF_A} shows the PDF of $F_A$ in our three different heating models, compared with the observed PDF. 
-%To recreate the total pathlength of the observed spectrum between $2.5<z\leq 3$, we stitch together t
+Fig.~\ref{fig:PDF_A} shows the PDF of $F_A$ in our three different heating models, compared with the observed PDF. To properly compare the observed spectrum with the simulation, we have to reconstruct identical lines of sight from the simulations. The outputs of our simulations are separated by $dz=0.1$, starting at $z=3$. To reconstruct the line of sight, we stitch together subsections of lines of sight from all outputs between $z=3$ and $z=2.6$. For each output, the size of the subsection is set by the comoving distance $dl$ corresponding to $dz=0.1$ for the considered redshift. The first pixel of the subsection is randomly chosen along the line of sight and we use the periodic boundary conditions to complete the line of sight if the edge of the computational box is reached before $dl$ is completed. The lines of sight are randomly chosen for each output. While this produces small discontinuities at the junctions of the subsections, it is a more realistic representation of the varying cosmic structure that would be encountered by a photon \citep[see e.g.][for a discussion]{2016arXiv161203935H}. 
+
+As the observed line of sight is unique, cosmic variance can significantly affect the resulting flux PDF \citep{2013MNRAS.428..540R,2017MNRAS.466.2690R}. To provide some measurement of the spread of the flux PDF, we recreate a total of one hundred  lines of sight from each of our simulations. The pink and red regions in Fig.~\ref{fig:PDF_allz_100lines} show the resulting one and two sigma deviations from the mean. While we are confident that we do not oversample specific locations of the simulation, in PaperI we showed that the typical length scale  of heated/unheated regions is of a few tens of Mpc/h. As such, the number of regions sampled by our simulation is somewhat limited and we likely underestimate cosmic variance. 
+
+Fig.~\ref{fig:PDF_A} shows that the rescaled flux PDF of the Lyman $\alpha$ forest cannot be reproduced by a model without additional heating before or around $2.5<z<3$. Inhomogeneous blazar heating does provide a flux PDF compatible with observations. The uniform model, where the same total amount of blazar heating is injected, shows less good agreement with the data. This model has less physical motivation, as blazar heating is naturally inhomogeneous, because of the biased distribution of the sources.  At the redshifts considered, the impact of extended and/or late HeII reionization cannot be ruled out \ALc{[Although it might be more uniform in this case? ]}. 
+
+
+
 
 
 
@@ -219,17 +206,11 @@ Fig.~\ref{fig:PDF_A} shows the PDF of $F_A$ in our three different heating model
 \centering
 \includegraphics[width = .9\textwidth ]{PDF_allz_100lines}
 \caption{Probability distribution function of the rescaled flux in the unheated (left), inhomogeneously heated (middle) and uniformly heated model (right) between $2.5 <z\leq 3$. The thick line represents the mean over the 100 lines of sight, and the red and pink area the 1 and 2 $\sigma$ uncertainty around the mean. The observed PDF is given with the blue dots \citet{2017MNRAS.466.2690R}. }
-\label{fig:fluxPDF}
+\label{fig:PDF_A}
 \end{figure*}
 
 
 
-\begin{figure*}[h]
-\centering
-\includegraphics[width = .9\textwidth ]{PDF_predict_allz_100lines}
-\caption{Predicted probability distribution function of the rescaled flux in the unheated (left), inhomogeneously heated (middle) and uniformly heated model (right) between $2 <z\leq 2.5$. The thick line represents the mean over the 100 lines of sight, and the red and pink area the 1 and 2 $\sigma$ uncertainty around the mean.  }
-\label{fig:fluxPDF}
-\end{figure*}
 
 
 
@@ -248,7 +229,42 @@ Fig.~\ref{fig:PDF_A} shows the PDF of $F_A$ in our three different heating model
 
 \section{Discussion}\label{sec:discussion}
 
+The impact of HeII reionization on the temperature of the IGM cannot be ruled out for $z>2.5$. As such, a clear signature of a heating source in low density IGM, for which blazar heating is currently the only candidate, can only be firmly established with lower redshift measurements. While $z<2.5$ data is present in the DEEP spectrum, the data contains both Ly$\alpha$ and Ly$\beta$ absorption lines, which makes the analysis more complex and prone to uncertainties, especially when the sample is limited. Figure ~\ref{fig:PDF_predict} shows the predicted PDF of the rescaled flux between $2.5<z<2$ for the three models we consider. High signal-to-noise, high spectral resolution lines-of-sight towards quasars located between $2.2\lesssim z \lesssim 2,7$ (not contaminated by Ly$\beta$ absorption) will be able to discriminate between a heated and non-heated model. 
+ %At lower redshifts, 
+
+
+
+
+\begin{figure*}[h]
+\centering
+\includegraphics[width = .9\textwidth ]{PDF_predict_allz_100lines}
+\caption{Predicted probability distribution function of the rescaled flux in the unheated (left), inhomogeneously heated (middle) and uniformly heated model (right) between $2 <z\leq 2.5$. The thick line represents the mean over the 100 lines of sight, and the red and pink area the 1 and 2 $\sigma$ uncertainty around the mean.  }
+\label{fig:PDF_predict}
+\end{figure*}
+
+
 \section{Conclusions}\label{sec:conclusion}
+
+\begin{figure*}[h]
+\centering
+\includegraphics[width = .8\textwidth ]{lines_z2_2}
+\caption{Ly$\alpha$ absorption spectrum at $z=2.2$ in the three models. \ALc{[Placeholder, will be improved]}}
+\label{fig:bias}
+\end{figure*}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width = .45\textwidth ]{powerspec}
+\caption{ Power spectrum at different redshifts compare with observations \ALc{[Placeholder, will be improved]}}
+\label{fig:powespec}
+\end{figure}
+
+\begin{figure*}[h]
+\centering
+\includegraphics[width = .9\textwidth ]{flux_PDF}
+\caption{Flux PDF at different redshifts compare with observations \ALc{[Placeholder, will be improved]}}
+\label{fig:fluxPDF}
+\end{figure*}
 
 \begin{acknowledgements}
 A.L. warmly thanks Alberto Rorai for sharing an early version of his manuscript and the many clarifications he provided.
