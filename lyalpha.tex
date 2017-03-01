@@ -124,7 +124,7 @@ We perform a set of three simulations, one without any blazar heating, one with 
 \label{fig:window}
 \end{figure}
 
-Because of the typical length scale of the heating rate fluctuations, our simulation have a comoving sidelength of  a $100$ h$^{-1}$ Mpc.  Tests in Paper I showed that this is a sufficiently large size to properly sample the full range of temperature fluctuations. \ALc{Discuss resolution here}
+Because of the typical length scale of the heating rate fluctuations, our simulation have a comoving sidelength of  a $100$ h$^{-1}$ Mpc.  Tests in Paper I showed that this is a sufficiently large size to properly sample the full range of temperature fluctuations. \ALc{Discuss resolution here}. 
 
 
 
@@ -164,9 +164,16 @@ Fig.~\ref{fig:rho_T} shows the temperature-density distribution in our inhomogen
 \end{figure*}
 
 
-
+%to do : discuss helium
 
 \subsection{Post-processing the simulations}
+We compare our simulations with different heating models with observations of the Ly$\alpha$ forest, focusing on statistics that are sensitive to low density regions. First, we extract 100 lines of sight from each output. The lines of sight are randomly selected and aligned along the main axes of the simulation. For each line of sight, we determine the density, velocity, temperature and resulting optical depth of HI along 2048 equally spaced bins. 
+
+
+
+
+
+
 \begin{itemize}
 \item Global flow , potential caveats
 \item Details about subdividing LOS in chunks for VPFIT
@@ -197,8 +204,36 @@ Fig.~\ref{fig:rho_T} shows the temperature-density distribution in our inhomogen
 \end{figure*}
 
 \subsection{Thermal state of the IGM}
+To compare with the rescaled flux PDF by \citet{2017MNRAS.466.2690R}, we carefully perform the same steps. First, we rescale the optical depth so that the mean transmitted flux $F$ matches the observed value at that redshift \citep{2013MNRAS.436.1023B}. We perform this operation at once for all lines of sight resulting from the same output.  Then, we smooth the flux with a Gaussian of full width at half maximum of $7.2$ km s$^{-1}$ (to model the aperture of the slit) and rebin it into bins of $\Delta v=2.5$ km s$^{-1}$ (resolution of the UVES spectrograph). We then add Gaussian noise with $\sigma=(\sigma_0^2+F(\sigma_c^2-\sigma_0^2))^{1/2}$ with $\sigma_0=0.0028$ and $\sigma_c=0.0088$ (see Appendix F in \citet{2017MNRAS.466.2690R})
+
+To avoid uncertainties due to continuum placement, we then rescale the transmitted flux to the transmitted flux in the 95$^{th}$ percentile. The latter is close to the peak of the flux PDF, and is therefore less noisy than the mean. This operation performed independently for each line of sight, in chunks of size 10 Mpc/h. Finally, to enhance the impact of low density regions, we rescale the optical depth by a factor $A=10$, which yield a rescaled transmitted flux $F_A=F^A$.
+
+
+Fig.~\ref{fig:PDF_A} shows the PDF of $F_A$ in our three different heating models, compared with the observed PDF. 
+%To recreate the total pathlength of the observed spectrum between $2.5<z\leq 3$, we stitch together t
+
+
+
+
+\begin{figure*}[h]
+\centering
+\includegraphics[width = .9\textwidth ]{PDF_allz_100lines}
+\caption{Probability distribution function of the rescaled flux in the unheated (left), inhomogeneously heated (middle) and uniformly heated model (right) between $2.5 <z\leq 3$. The thick line represents the mean over the 100 lines of sight, and the red and pink area the 1 and 2 $\sigma$ uncertainty around the mean. The observed PDF is given with the blue dots \citet{2017MNRAS.466.2690R}. }
+\label{fig:fluxPDF}
+\end{figure*}
+
+
+
+\begin{figure*}[h]
+\centering
+\includegraphics[width = .9\textwidth ]{PDF_predict_allz_100lines}
+\caption{Predicted probability distribution function of the rescaled flux in the unheated (left), inhomogeneously heated (middle) and uniformly heated model (right) between $2 <z\leq 2.5$. The thick line represents the mean over the 100 lines of sight, and the red and pink area the 1 and 2 $\sigma$ uncertainty around the mean.  }
+\label{fig:fluxPDF}
+\end{figure*}
+
+
+
 \begin{enumerate}
-\item Compare with Rorai 2016
 \item Maybe compare with low-z results
 \item Rudie and other b-Nh distributions
 \end{enumerate}
@@ -216,6 +251,7 @@ Fig.~\ref{fig:rho_T} shows the temperature-density distribution in our inhomogen
 \section{Conclusions}\label{sec:conclusion}
 
 \begin{acknowledgements}
+A.L. warmly thanks Alberto Rorai for sharing an early version of his manuscript and the many clarifications he provided.
 %% AL and PC are supported by the UWM Research Growth Initiative, the NASA ATP
 %% program through NASA grant NNX13AH43G, and NSF grant AST-1255469.
 %% A.E.B.~and M.S.~receive financial support from the Perimeter
@@ -228,6 +264,7 @@ Fig.~\ref{fig:rho_T} shows the temperature-density distribution in our inhomogen
 %% financial support of the Klaus Tschira Foundation. E.P. acknowledges support by the ERC grant ``The Emergence of Structure during the epoch of Reionization''.
 %% The authors acknowledge the Texas Advanced Computing Center (TACC) at The University of Texas at Austin and the NASA Advanced Supercomputing Division for providing HPC resources that have contributed to the research results reported within this paper. The authors thank S. Furlanetto, A. Loeb and M. Heahnelt for fruitful discussions. 
 \end{acknowledgements}
+
 
 \bibliographystyle{apj}
 \bibliography{biblio_total}
